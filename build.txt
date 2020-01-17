@@ -1,0 +1,3 @@
+displayName = Persona 5 Cosplay
+author = Huckletoon
+version = 0.1
