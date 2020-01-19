@@ -8,7 +8,7 @@ namespace Persona5Cosplay.Items
 		public override void SetStaticDefaults() 
 		{
 			// DisplayName.SetDefault("RebelKnife"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("This is a basic modded sword.");
+			Tooltip.SetDefault("A knife with a hint of rebellious spirit");
 		}
 
 		public override void SetDefaults() 
