@@ -15,8 +15,12 @@ I found Persona 5 to be one of my favorite games in quite some time, and I've be
    - Bring some over from Persona
 - Toggleable custom P5-themed Health and Mana UI
 
-## Planned Additions
-WIP
+## Features Not Started
+Almost everything
+
+## In-Progress
+Trickster T1+T2 (Needs Art)
+Rebel Knife (Needs Art + Testing/Tweaking)
 
 ## Completed Features
 WIP

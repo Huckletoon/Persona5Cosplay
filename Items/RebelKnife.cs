@@ -13,7 +13,8 @@ namespace Persona5Cosplay.Items
 
 		public override void SetDefaults() 
 		{
-			item.damage = 50;
+			item.damage = 14;
+			item.crit = 40;
 			item.melee = true;
 			item.width = 40;
 			item.height = 40;
@@ -21,8 +22,8 @@ namespace Persona5Cosplay.Items
 			item.useAnimation = 20;
 			item.useStyle = 1;
 			item.knockBack = 6;
-			item.value = 10000;
-			item.rare = 2;
+			item.value = 5000;
+			item.rare = 1;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
 		}
@@ -30,8 +31,8 @@ namespace Persona5Cosplay.Items
 		public override void AddRecipes() 
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.DirtBlock, 10);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddRecipeGroup("IronBar", 15);
+			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
