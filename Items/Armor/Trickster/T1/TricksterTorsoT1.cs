@@ -8,6 +8,7 @@ namespace Persona5Cosplay.Items.Armor.Trickster.T1
     [AutoloadEquip(EquipType.Body)]
     class TricksterTorsoT1 : ModItem
     {
+        public override string Texture => "Persona5Cosplay/Items/Armor/Trickster/TricksterTorso";
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Trickster Armor T1");

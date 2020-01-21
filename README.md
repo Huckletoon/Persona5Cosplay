@@ -17,10 +17,19 @@ I found Persona 5 to be one of my favorite games in quite some time, and I've be
 
 ## Features Not Started
 Almost everything
+Skull Armor T1-T7
+Mona Armor T1-T7
+Panther Armor T1-T7
+Fox Armor T1-T7
+Queen Armor T1-T7
+Oracle Armor T1-T7
+Noir Armor T1-T7
+Crow Armor T1-T7
+Rebellious Spirit
 
 ## In-Progress
-Trickster T1+T2 (Needs Art)
-Rebel Knife (Needs Art + Testing/Tweaking)
+Trickster T1-T7 (Needs Art)
+Rebel Knife (Needs Art + Arkhalis-style projectile + Testing/Tweaking)
 
 ## Completed Features
 WIP

@@ -8,6 +8,7 @@ namespace Persona5Cosplay.Items.Armor.Trickster.T2
     [AutoloadEquip(EquipType.Legs)]
     class TricksterLegsT2 : ModItem
     {
+        public override string Texture => "Persona5Cosplay/Items/Armor/Trickster/TricksterLegs";
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Trickster Pants T2");

@@ -1,16 +1,17 @@
 ﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using static Terraria.ModLoader.ModContent;
 
-namespace Persona5Cosplay.Items.Armor.Trickster.T1
+namespace Persona5Cosplay.Items.Armor.Trickster.T4
 {
     [AutoloadEquip(EquipType.Head)]
-    class TricksterHeadT1 : ModItem
+    class TricksterHeadT4 : ModItem
     {
         public override string Texture => "Persona5Cosplay/Items/Armor/Trickster/TricksterHead";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Trickster Mask T1");
+            DisplayName.SetDefault("Trickster Mask T4");
             Tooltip.SetDefault("The mask worn by the Trickster");
         }
 
@@ -18,18 +19,27 @@ namespace Persona5Cosplay.Items.Armor.Trickster.T1
         {
             item.width = 18;
             item.height = 18;
-            item.value = 7000;
-            item.rare = 1;
-            item.defense = 3;
+            item.value = 70000;
+            item.rare = 4;
+            item.defense = 9;
         }
 
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddRecipeGroup("IronBar", 15);
+            recipe.AddIngredient(ItemID.CobaltBar, 15);
+            recipe.AddIngredient(mod, "TricksterHeadT3");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();
+
+            recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.PalladiumBar, 15);
+            recipe.AddIngredient(mod, "TricksterHeadT3");
+            recipe.AddTile(TileID.Anvils);
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+
         }
     }
 }

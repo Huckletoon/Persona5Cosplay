@@ -8,6 +8,7 @@ namespace Persona5Cosplay.Items.Armor.Trickster.T2
     [AutoloadEquip(EquipType.Head)]
     class TricksterHeadT2 : ModItem
     {
+        public override string Texture => "Persona5Cosplay/Items/Armor/Trickster/TricksterHead";
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Trickster Mask T2");
