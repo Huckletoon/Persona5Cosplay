@@ -1,58 +1,57 @@
-﻿using Persona5Cosplay.Items.Armor.Trickster.T1;
-using Terraria;
+﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Persona5Cosplay.Items.Armor.Trickster.T4
+namespace Persona5Cosplay.Items.Armor.Skull.T4
 {
     [AutoloadEquip(EquipType.Body)]
-    class TricksterTorsoT4 : ModItem
+    class SkullTorsoT4 : ModItem
     {
-        public override string Texture => "Persona5Cosplay/Items/Armor/Trickster/TricksterTorso";
+        public override string Texture => "Persona5Cosplay/Items/Armor/Skull/SkullTorso";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Trickster Armor T4");
-            Tooltip.SetDefault("The cognitive garb of the Trickster");
+            DisplayName.SetDefault("Skull Armor T4");
+            Tooltip.SetDefault("The garb of Skull's rebellion");
         }
 
         public override void SetDefaults()
         {
             item.width = 18;
             item.height = 18;
-            item.value = 100000;
+            item.value = 10000;
             item.rare = 4;
-            item.defense = 11;
+            item.defense = 13;
         }
 
         public override bool IsArmorSet(Item head, Item body, Item legs)
         {
-            return head.type == ItemType<TricksterHeadT4>() && legs.type == ItemType<TricksterLegsT4>();
+            return head.type == ItemType<SkullHeadT4>() && legs.type == ItemType<SkullLegsT4>();
         }
 
         public override void UpdateArmorSet(Player player)
         {
-            player.setBonus = "+20% Damage\nSet bonus: +15% Attack Speed";
-            player.allDamage += 0.20f;
+            player.setBonus = "+25% Melee Damage\nSet bonus: +15% Attack Speed\nSet bonus: Knockback Immunity";
+            player.meleeDamage += 0.25f;
             player.GetModPlayer<P5Player>().attackSpeedMod = 0.15f;
+            player.noKnockback = true;
         }
 
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.CobaltBar, 25);
-            recipe.AddIngredient(mod, "TricksterTorsoT3");
+            recipe.AddIngredient(ItemID.CobaltBar, 30);
+            recipe.AddIngredient(mod, "SkullTorsoT3");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();
 
             recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.PalladiumBar, 25);
-            recipe.AddIngredient(mod, "TricksterTorsoT3");
+            recipe.AddIngredient(ItemID.PalladiumBar, 30);
+            recipe.AddIngredient(mod, "SkullTorsoT3");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();
-
         }
     }
 }

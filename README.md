@@ -28,8 +28,9 @@ Crow Armor T1-T7
 Rebellious Spirit
 
 ## In-Progress
-Trickster T1-T7 (Needs Art)
-Rebel Knife (Needs Art + Arkhalis-style projectile + Testing/Tweaking)
+Trickster T1-T7 (Needs: Art)
+Skull T1-T7 (Needs: Art + Price + Rarity)
+Rebel Knife (Needs: Art + Arkhalis-style projectile + Testing/Tweaking)
 
 ## Completed Features
 WIP
