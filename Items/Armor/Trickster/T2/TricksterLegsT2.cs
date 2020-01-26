@@ -19,7 +19,7 @@ namespace Persona5Cosplay.Items.Armor.Trickster.T2
         {
             item.width = 18;
             item.height = 18;
-            item.value = 35000;
+            item.value = 1600;
             item.rare = 1;
             item.defense = 8;
         }

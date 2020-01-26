@@ -6,10 +6,12 @@ namespace Persona5Cosplay
     public class P5Player : ModPlayer
     {
         public float attackSpeedMod = 0;
+        public int equipmentTier = 0;
 
         public override void PreUpdate()
         {
             attackSpeedMod = 0;
+            equipmentTier = 0;
         }
 
         public override float UseTimeMultiplier(Item item)

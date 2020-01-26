@@ -19,8 +19,8 @@ namespace Persona5Cosplay.Items.Armor.Skull.T2
         {
             item.width = 18;
             item.height = 18;
-            item.value = 20000;
-            item.rare = 2;
+            item.value = 1200;
+            item.rare = 1;
             item.defense = 6;
         }
 

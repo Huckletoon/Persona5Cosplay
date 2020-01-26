@@ -25,11 +25,11 @@ Queen Armor T1-T7
 Oracle Armor T1-T7
 Noir Armor T1-T7
 Crow Armor T1-T7
-Rebellious Spirit
+Rebellious Spirit (Levels up depending on tier of armor set worn)
 
 ## In-Progress
 Trickster T1-T7 (Needs: Art)
-Skull T1-T7 (Needs: Art + Price + Rarity)
+Skull T1-T7 (Needs: Art)
 Rebel Knife (Needs: Art + Arkhalis-style projectile + Testing/Tweaking)
 
 ## Completed Features

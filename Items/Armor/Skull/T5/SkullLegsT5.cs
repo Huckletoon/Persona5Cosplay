@@ -20,7 +20,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T5
         {
             item.width = 18;
             item.height = 18;
-            item.value = 10000;
+            item.value = 40000;
             item.rare = 5;
             item.defense = 15;
         }
