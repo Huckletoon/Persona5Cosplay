@@ -33,6 +33,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T1
         {
             player.setBonus = "+10% Melee Damage";
             player.meleeDamage += 0.10f;
+            player.GetModPlayer<P5Player>().equipmentTier = 1;
         }
 
         public override void AddRecipes()

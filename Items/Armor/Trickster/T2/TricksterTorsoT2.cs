@@ -34,19 +34,13 @@ namespace Persona5Cosplay.Items.Armor.Trickster.T2
         {
             player.setBonus = "+10% Damage";
             player.allDamage += 0.10f;
+            player.GetModPlayer<P5Player>().equipmentTier = 2;
         }
 
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.GoldBar, 30);
-            recipe.AddIngredient(mod, "TricksterTorsoT1");
-            recipe.AddTile(TileID.Anvils);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
-
-            recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.PlatinumBar, 30);
+            recipe.AddRecipeGroup("Persona5Cosplay:GoldBars", 30);
             recipe.AddIngredient(mod, "TricksterTorsoT1");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);

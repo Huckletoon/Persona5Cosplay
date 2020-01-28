@@ -27,14 +27,7 @@ namespace Persona5Cosplay.Items.Armor.Trickster.T3
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.CrimtaneBar, 15);
-            recipe.AddIngredient(mod, "TricksterHeadT2");
-            recipe.AddTile(TileID.Anvils);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
-
-            recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.DemoniteBar, 15);
+            recipe.AddRecipeGroup("Persona5Cosplay:EvilBars", 15);
             recipe.AddIngredient(mod, "TricksterHeadT2");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);

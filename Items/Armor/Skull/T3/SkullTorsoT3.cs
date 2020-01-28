@@ -35,19 +35,13 @@ namespace Persona5Cosplay.Items.Armor.Skull.T3
             player.meleeDamage += 0.20f;
             player.noKnockback = true;
             player.GetModPlayer<P5Player>().attackSpeedMod = 0.10f;
+            player.GetModPlayer<P5Player>().equipmentTier = 3;
         }
 
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.CrimtaneBar, 30);
-            recipe.AddIngredient(mod, "SkullTorsoT2");
-            recipe.AddTile(TileID.Anvils);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
-
-            recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.DemoniteBar, 30);
+            recipe.AddRecipeGroup("Persona5Cosplay:EvilBars", 25);
             recipe.AddIngredient(mod, "SkullTorsoT2");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);

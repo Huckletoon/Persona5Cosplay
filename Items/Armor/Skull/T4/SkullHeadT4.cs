@@ -27,18 +27,12 @@ namespace Persona5Cosplay.Items.Armor.Skull.T4
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.CobaltBar, 10);
+            recipe.AddRecipeGroup("Persona5Cosplay:CobaltBars", 10);
             recipe.AddIngredient(mod, "SkullHeadT3");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();
-
-            recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.PalladiumBar, 10);
-            recipe.AddIngredient(mod, "SkullHeadT3");
-            recipe.AddTile(TileID.Anvils);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+             
         }
     }
 }

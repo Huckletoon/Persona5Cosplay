@@ -27,14 +27,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T2
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.GoldBar, 25);
-            recipe.AddIngredient(mod, "SkullLegsT1");
-            recipe.AddTile(TileID.Anvils);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
-
-            recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.PlatinumBar, 25);
+            recipe.AddRecipeGroup("Persona5Cosplay:GoldBars", 25);
             recipe.AddIngredient(mod, "SkullLegsT1");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);

@@ -27,14 +27,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T3
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.CrimtaneBar, 10);
-            recipe.AddIngredient(mod, "SkullHeadT2");
-            recipe.AddTile(TileID.Anvils);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
-
-            recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.DemoniteBar, 10);
+            recipe.AddRecipeGroup("Persona5Cosplay:EvilBars", 15);
             recipe.AddIngredient(mod, "SkullHeadT2");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);

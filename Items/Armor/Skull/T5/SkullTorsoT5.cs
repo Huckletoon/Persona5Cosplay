@@ -9,10 +9,12 @@ namespace Persona5Cosplay.Items.Armor.Skull.T5
     [AutoloadEquip(EquipType.Body)]
     class SkullTorsoT5 : ModItem
     {
+        public int tier = 5;
+
         public override string Texture => "Persona5Cosplay/Items/Armor/Skull/SkullTorso";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Skull Armor");
+            DisplayName.SetDefault("Skull Armor T5");
             Tooltip.SetDefault("The garb of Skull's rebellion");
         }
 
@@ -36,6 +38,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T5
             player.meleeDamage += 0.35f;
             player.GetModPlayer<P5Player>().attackSpeedMod = 0.25f;
             player.noKnockback = true;
+            player.GetModPlayer<P5Player>().equipmentTier = 5;
         }
 
         public override void AddRecipes()

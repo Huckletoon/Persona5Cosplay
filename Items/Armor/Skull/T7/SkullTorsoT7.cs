@@ -36,6 +36,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T7
             player.meleeDamage += 0.60f;
             player.GetModPlayer<P5Player>().attackSpeedMod = 0.50f;
             player.noKnockback = true;
+            player.GetModPlayer<P5Player>().equipmentTier = 7;
         }
 
         public override void AddRecipes()

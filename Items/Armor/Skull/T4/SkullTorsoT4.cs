@@ -35,23 +35,17 @@ namespace Persona5Cosplay.Items.Armor.Skull.T4
             player.meleeDamage += 0.25f;
             player.GetModPlayer<P5Player>().attackSpeedMod = 0.15f;
             player.noKnockback = true;
+            player.GetModPlayer<P5Player>().equipmentTier = 4;
         }
 
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.CobaltBar, 30);
+            recipe.AddRecipeGroup("Persona5Cosplay:CobaltBars", 30);
             recipe.AddIngredient(mod, "SkullTorsoT3");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
-            recipe.AddRecipe();
-
-            recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.PalladiumBar, 30);
-            recipe.AddIngredient(mod, "SkullTorsoT3");
-            recipe.AddTile(TileID.Anvils);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
+            recipe.AddRecipe(); 
         }
     }
 }

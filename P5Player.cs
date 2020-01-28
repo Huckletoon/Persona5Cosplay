@@ -11,7 +11,7 @@ namespace Persona5Cosplay
         public override void PreUpdate()
         {
             attackSpeedMod = 0;
-            equipmentTier = 0;
+            //equipmentTier = 0;
         }
 
         public override float UseTimeMultiplier(Item item)

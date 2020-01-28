@@ -35,19 +35,13 @@ namespace Persona5Cosplay.Items.Armor.Trickster.T3
             player.setBonus = "+15% Damage\nSet bonus: +10% Attack Speed";
             player.allDamage += 0.15f;
             player.GetModPlayer<P5Player>().attackSpeedMod = 0.10f;
+            player.GetModPlayer<P5Player>().equipmentTier = 3;
         }
 
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.CrimtaneBar, 25);
-            recipe.AddIngredient(mod, "TricksterTorsoT2");
-            recipe.AddTile(TileID.Anvils);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
-
-            recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.DemoniteBar, 25);
+            recipe.AddRecipeGroup("Persona5Cosplay:EvilBars", 25);
             recipe.AddIngredient(mod, "TricksterTorsoT2");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);

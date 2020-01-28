@@ -33,6 +33,7 @@ namespace Persona5Cosplay.Items.Armor.Trickster.T1
         {
             player.setBonus = "+5% Damage";
             player.allDamage += 0.05f;
+            player.GetModPlayer<P5Player>().equipmentTier = 1;
         }
 
         public override void AddRecipes()

@@ -35,6 +35,7 @@ namespace Persona5Cosplay.Items.Armor.Trickster.T5
             player.setBonus = "+30% Damage\nSet bonus: +25% Attack Speed";
             player.allDamage += 0.30f;
             player.GetModPlayer<P5Player>().attackSpeedMod = 0.25f;
+            player.GetModPlayer<P5Player>().equipmentTier = 5;
         }
 
         public override void AddRecipes()

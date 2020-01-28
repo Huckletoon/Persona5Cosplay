@@ -27,19 +27,11 @@ namespace Persona5Cosplay.Items.Armor.Trickster.T4
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.CobaltBar, 20);
+            recipe.AddRecipeGroup("Persona5Cosplay:CobaltBars", 20);
             recipe.AddIngredient(mod, "TricksterLegsT3");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();
-
-            recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.PalladiumBar, 20);
-            recipe.AddIngredient(mod, "TricksterLegsT3");
-            recipe.AddTile(TileID.Anvils);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
-
         }
     }
 }

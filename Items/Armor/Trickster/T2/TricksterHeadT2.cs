@@ -27,14 +27,7 @@ namespace Persona5Cosplay.Items.Armor.Trickster.T2
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.GoldBar, 15);
-            recipe.AddIngredient(mod, "TricksterHeadT1");
-            recipe.AddTile(TileID.Anvils);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
-
-            recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.PlatinumBar, 15);
+            recipe.AddRecipeGroup("Persona5Cosplay:GoldBars", 15);
             recipe.AddIngredient(mod, "TricksterHeadT1");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);

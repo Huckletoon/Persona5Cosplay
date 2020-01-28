@@ -34,19 +34,13 @@ namespace Persona5Cosplay.Items.Armor.Skull.T2
             player.setBonus = "+15% Melee Damage\nSet bonus: Knockback Immunity";
             player.meleeDamage += 0.15f;
             player.noKnockback = true;
+            player.GetModPlayer<P5Player>().equipmentTier = 2;
         }
 
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.GoldBar, 30);
-            recipe.AddIngredient(mod, "SkullTorsoT1");
-            recipe.AddTile(TileID.Anvils);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
-
-            recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.PlatinumBar, 30);
+            recipe.AddRecipeGroup("Persona5Cosplay:GoldBars", 30);
             recipe.AddIngredient(mod, "SkullTorsoT1");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);

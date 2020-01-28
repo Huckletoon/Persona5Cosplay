@@ -8,7 +8,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T2
     [AutoloadEquip(EquipType.Head)]
     class SkullHeadT2 : ModItem
     {
-        public override string Texture => "Persona5Cosplay/Items/Armor/Skull/SkullTorso";
+        public override string Texture => "Persona5Cosplay/Items/Armor/Skull/SkullHead";
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Skull Mask T2");
@@ -27,14 +27,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T2
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.GoldBar, 15);
-            recipe.AddIngredient(mod, "SkullHeadT1");
-            recipe.AddTile(TileID.Anvils);
-            recipe.SetResult(this);
-            recipe.AddRecipe();
-
-            recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.PlatinumBar, 15);
+            recipe.AddRecipeGroup("Persona5Cosplay:GoldBars", 15);
             recipe.AddIngredient(mod, "SkullHeadT1");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
