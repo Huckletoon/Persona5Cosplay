@@ -13,6 +13,7 @@ I found Persona 5 to be one of my favorite games in quite some time, and I've be
    - Ranged: Guns fitting each party member, again possibly different tiers
 - Accessories, not sure what yet
    - Bring some over from Persona
+   - Rebellious Spirit: Increases HP, Mana, Defense, and Crit chance based on armor set tier
 - Toggleable custom P5-themed Health and Mana UI
 
 ## Features Not Started
@@ -25,12 +26,12 @@ Queen Armor T1-T7
 Oracle Armor T1-T7
 Noir Armor T1-T7
 Crow Armor T1-T7
-Rebellious Spirit (Levels up depending on tier of armor set worn)
 
 ## In-Progress
 Trickster T1-T7 (Needs: Art)
 Skull T1-T7 (Needs: Art)
 Rebel Knife (Needs: Art + Arkhalis-style projectile + Testing/Tweaking)
+Rebellious Spirit (Needs: Art)
 
 ## Completed Features
 WIP

@@ -60,7 +60,9 @@ namespace Persona5Cosplay.Items
 						}
 					}
 				}
-			} finally { }
+			} catch (Exception e) {
+				mod.Logger.Error(e);
+			}
 			player.statDefense += 3 + (tier * 2);
 			switch(tier)
 			{
