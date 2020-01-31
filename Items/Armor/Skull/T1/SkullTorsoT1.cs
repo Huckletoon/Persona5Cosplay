@@ -26,7 +26,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T1
 
         public override bool IsArmorSet(Item head, Item body, Item legs)
         {
-            return head.type == ItemType<PantherHeadT1>() && legs.type == ItemType<SkullLegsT1>();
+            return head.type == ItemType<SkullHeadT1>() && legs.type == ItemType<SkullLegsT1>();
         }
 
         public override void UpdateArmorSet(Player player)

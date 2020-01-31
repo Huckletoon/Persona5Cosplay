@@ -3,16 +3,16 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Persona5Cosplay.Items.Armor.Skull.T3
+namespace Persona5Cosplay.Items.Armor.Fox.T3
 {
     [AutoloadEquip(EquipType.Head)]
-    class SkullHeadT3 : ModItem
+    class FoxHeadT3 : ModItem
     {
-        public override string Texture => "Persona5Cosplay/Items/Armor/Skull/SkullHead";
+        public override string Texture => "Persona5Cosplay/Items/Armor/Fox/FoxHead";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Skull Mask T3");
-            Tooltip.SetDefault("The mask worn by Skull");
+            DisplayName.SetDefault("Fox Mask T3");
+            Tooltip.SetDefault("The mask worn by Fox");
         }
 
         public override void SetDefaults()
@@ -21,14 +21,14 @@ namespace Persona5Cosplay.Items.Armor.Skull.T3
             item.height = 18;
             item.value = 6000;
             item.rare = 2;
-            item.defense = 8;
+            item.defense = 9;
         }
 
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddRecipeGroup("Persona5Cosplay:EvilBars", 15);
-            recipe.AddIngredient(mod, "SkullHeadT2");
+            recipe.AddIngredient(mod, "FoxHeadT2");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();

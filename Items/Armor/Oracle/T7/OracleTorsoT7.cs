@@ -1,19 +1,19 @@
-﻿using Persona5Cosplay.Items.Armor.Skull.T1;
+﻿using Persona5Cosplay.Items.Armor.Oracle.T1;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Persona5Cosplay.Items.Armor.Skull.T7
+namespace Persona5Cosplay.Items.Armor.Oracle.T7
 {
     [AutoloadEquip(EquipType.Body)]
-    class SkullTorsoT7 : ModItem
+    class OracleTorsoT7 : ModItem
     {
-        public override string Texture => "Persona5Cosplay/Items/Armor/Skull/SkullTorso";
+        public override string Texture => "Persona5Cosplay/Items/Armor/Oracle/OracleTorso";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Ultimate Skull Armor");
-            Tooltip.SetDefault("The true garb of Skull");
+            DisplayName.SetDefault("Ultimate Oracle Armor");
+            Tooltip.SetDefault("The true garb of Oracle");
         }
 
         public override void SetDefaults()
@@ -27,7 +27,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T7
 
         public override bool IsArmorSet(Item head, Item body, Item legs)
         {
-            return head.type == ItemType<SkullHeadT7>() && legs.type == ItemType<SkullLegsT7>();
+            return head.type == ItemType<OracleHeadT7>() && legs.type == ItemType<OracleLegsT7>();
         }
 
         public override void UpdateArmorSet(Player player)
@@ -47,7 +47,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T7
             recipe.AddIngredient(ItemID.FragmentSolar, 20);
             recipe.AddIngredient(ItemID.FragmentStardust, 20);
             recipe.AddIngredient(ItemID.FragmentVortex, 20);
-            recipe.AddIngredient(mod, "SkullTorsoT6");
+            recipe.AddIngredient(mod, "OracleTorsoT6");
             recipe.AddTile(TileID.LunarCraftingStation);
             recipe.SetResult(this);
             recipe.AddRecipe();

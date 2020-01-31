@@ -1,19 +1,19 @@
-﻿using Persona5Cosplay.Items.Armor.Skull.T1;
+﻿using Persona5Cosplay.Items.Armor.Crow.T1;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Persona5Cosplay.Items.Armor.Skull.T6
+namespace Persona5Cosplay.Items.Armor.Crow.T6
 {
     [AutoloadEquip(EquipType.Body)]
-    class SkullTorsoT6 : ModItem
+    class CrowTorsoT6 : ModItem
     {
-        public override string Texture => "Persona5Cosplay/Items/Armor/Skull/SkullTorso";
+        public override string Texture => "Persona5Cosplay/Items/Armor/Crow/CrowTorso";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Skull Armor T6");
-            Tooltip.SetDefault("The garb of Skull's rebellion");
+            DisplayName.SetDefault("Crow Armor T6");
+            Tooltip.SetDefault("The garb of Crow's rebellion");
         }
 
         public override void SetDefaults()
@@ -27,7 +27,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T6
 
         public override bool IsArmorSet(Item head, Item body, Item legs)
         {
-            return head.type == ItemType<SkullHeadT6>() && legs.type == ItemType<SkullLegsT6>();
+            return head.type == ItemType<CrowHeadT6>() && legs.type == ItemType<CrowLegsT6>();
         }
 
         public override void UpdateArmorSet(Player player)
@@ -43,7 +43,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T6
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.ChlorophyteBar, 15);
-            recipe.AddIngredient(mod, "SkullTorsoT5");
+            recipe.AddIngredient(mod, "CrowTorsoT5");
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.SetResult(this);
             recipe.AddRecipe();

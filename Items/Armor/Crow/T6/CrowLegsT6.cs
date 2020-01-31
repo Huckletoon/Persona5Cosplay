@@ -1,19 +1,19 @@
-﻿using Persona5Cosplay.Items.Armor.Skull.T1;
+﻿using Persona5Cosplay.Items.Armor.Crow.T1;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Persona5Cosplay.Items.Armor.Skull.T6
+namespace Persona5Cosplay.Items.Armor.Crow.T6
 {
     [AutoloadEquip(EquipType.Legs)]
-    class SkullLegsT6 : ModItem
+    class CrowLegsT6 : ModItem
     {
-        public override string Texture => "Persona5Cosplay/Items/Armor/Skull/SkullLegs";
+        public override string Texture => "Persona5Cosplay/Items/Armor/Crow/CrowLegs";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Skull Pants T6");
-            Tooltip.SetDefault("The garb of Skull's rebellion");
+            DisplayName.SetDefault("Crow Pants T6");
+            Tooltip.SetDefault("The garb of Crow's rebellion");
         }
 
         public override void SetDefaults()
@@ -29,7 +29,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T6
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.ChlorophyteBar, 10);
-            recipe.AddIngredient(mod, "SkullLegsT5");
+            recipe.AddIngredient(mod, "CrowLegsT5");
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.SetResult(this);
             recipe.AddRecipe();

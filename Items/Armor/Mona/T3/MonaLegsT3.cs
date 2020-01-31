@@ -3,16 +3,16 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Persona5Cosplay.Items.Armor.Skull.T3
+namespace Persona5Cosplay.Items.Armor.Mona.T3
 {
     [AutoloadEquip(EquipType.Legs)]
-    class SkullLegsT3 : ModItem
+    class MonaLegsT3 : ModItem
     {
-        public override string Texture => "Persona5Cosplay/Items/Armor/Skull/SkullLegs";
+        public override string Texture => "Persona5Cosplay/Items/Armor/Mona/MonaLegs";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Skull Pants T3");
-            Tooltip.SetDefault("The garb of Skull's rebellion");
+            DisplayName.SetDefault("Mona Pants T3");
+            Tooltip.SetDefault("The garb of Mona's rebellion");
         }
 
         public override void SetDefaults()
@@ -28,7 +28,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T3
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddRecipeGroup("Persona5Cosplay:EvilBars", 20);
-            recipe.AddIngredient(mod, "SkullLegsT2");
+            recipe.AddIngredient(mod, "MonaLegsT2");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();

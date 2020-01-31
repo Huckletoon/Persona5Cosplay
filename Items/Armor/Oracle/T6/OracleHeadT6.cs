@@ -1,19 +1,19 @@
-﻿using Persona5Cosplay.Items.Armor.Skull.T1;
+﻿using Persona5Cosplay.Items.Armor.Oracle.T1;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Persona5Cosplay.Items.Armor.Skull.T6
+namespace Persona5Cosplay.Items.Armor.Oracle.T6
 {
     [AutoloadEquip(EquipType.Head)]
-    class SkullHeadT6 : ModItem
+    class OracleHeadT6 : ModItem
     {
-        public override string Texture => "Persona5Cosplay/Items/Armor/Skull/SkullHead";
+        public override string Texture => "Persona5Cosplay/Items/Armor/Oracle/OracleHead";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Skull Mask T6");
-            Tooltip.SetDefault("The mask worn by Skull");
+            DisplayName.SetDefault("Oracle Mask T6");
+            Tooltip.SetDefault("The mask worn by Oracle");
         }
 
         public override void SetDefaults()
@@ -29,7 +29,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T6
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.ChlorophyteBar, 5);
-            recipe.AddIngredient(mod, "SkullHeadT5");
+            recipe.AddIngredient(mod, "OracleHeadT5");
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.SetResult(this);
             recipe.AddRecipe();

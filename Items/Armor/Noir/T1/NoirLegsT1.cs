@@ -3,16 +3,16 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Persona5Cosplay.Items.Armor.Skull.T1
+namespace Persona5Cosplay.Items.Armor.Noir.T1
 {
     [AutoloadEquip(EquipType.Legs)]
-    class SkullLegsT1 : ModItem
+    class NoirLegsT1 : ModItem
     {
-        public override string Texture => "Persona5Cosplay/Items/Armor/Skull/SkullLegs";
+        public override string Texture => "Persona5Cosplay/Items/Armor/Noir/NoirLegs";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Skull Pants T1");
-            Tooltip.SetDefault("The garb of Skull's rebellion");
+            DisplayName.SetDefault("Noir Pants T1");
+            Tooltip.SetDefault("The garb of Noir's rebellion");
         }
 
         public override void SetDefaults()

@@ -3,16 +3,16 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Persona5Cosplay.Items.Armor.Skull.T2
+namespace Persona5Cosplay.Items.Armor.Oracle.T2
 {
     [AutoloadEquip(EquipType.Body)]
-    class SkullTorsoT2 : ModItem
+    class OracleTorsoT2 : ModItem
     {
-        public override string Texture => "Persona5Cosplay/Items/Armor/Skull/SkullTorso";
+        public override string Texture => "Persona5Cosplay/Items/Armor/Oracle/OracleTorso";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Skull Armor T2");
-            Tooltip.SetDefault("The garb of Skull's rebellion");
+            DisplayName.SetDefault("Oracle Armor T2");
+            Tooltip.SetDefault("The garb of Oracle's rebellion");
         }
 
         public override void SetDefaults()
@@ -26,7 +26,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T2
 
         public override bool IsArmorSet(Item head, Item body, Item legs)
         {
-            return head.type == ItemType<SkullHeadT2>() && legs.type == ItemType<SkullLegsT2>();
+            return head.type == ItemType<OracleHeadT2>() && legs.type == ItemType<OracleLegsT2>();
         }
 
         public override void UpdateArmorSet(Player player)
@@ -41,7 +41,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T2
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddRecipeGroup("Persona5Cosplay:GoldBars", 30);
-            recipe.AddIngredient(mod, "SkullTorsoT1");
+            recipe.AddIngredient(mod, "OracleTorsoT1");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();

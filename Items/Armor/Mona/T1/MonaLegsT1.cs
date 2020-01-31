@@ -3,16 +3,16 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Persona5Cosplay.Items.Armor.Skull.T1
+namespace Persona5Cosplay.Items.Armor.Mona.T1
 {
     [AutoloadEquip(EquipType.Legs)]
-    class SkullLegsT1 : ModItem
+    class MonaLegsT1 : ModItem
     {
-        public override string Texture => "Persona5Cosplay/Items/Armor/Skull/SkullLegs";
+        public override string Texture => "Persona5Cosplay/Items/Armor/Mona/MonaLegs";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Skull Pants T1");
-            Tooltip.SetDefault("The garb of Skull's rebellion");
+            DisplayName.SetDefault("Mona Pants T1");
+            Tooltip.SetDefault("The garb of Mona's rebellion");
         }
 
         public override void SetDefaults()

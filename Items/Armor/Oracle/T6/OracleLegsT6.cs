@@ -1,19 +1,19 @@
-﻿using Persona5Cosplay.Items.Armor.Skull.T1;
+﻿using Persona5Cosplay.Items.Armor.Oracle.T1;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Persona5Cosplay.Items.Armor.Skull.T6
+namespace Persona5Cosplay.Items.Armor.Oracle.T6
 {
     [AutoloadEquip(EquipType.Legs)]
-    class SkullLegsT6 : ModItem
+    class OracleLegsT6 : ModItem
     {
-        public override string Texture => "Persona5Cosplay/Items/Armor/Skull/SkullLegs";
+        public override string Texture => "Persona5Cosplay/Items/Armor/Oracle/OracleLegs";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Skull Pants T6");
-            Tooltip.SetDefault("The garb of Skull's rebellion");
+            DisplayName.SetDefault("Oracle Pants T6");
+            Tooltip.SetDefault("The garb of Oracle's rebellion");
         }
 
         public override void SetDefaults()
@@ -29,7 +29,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T6
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.ChlorophyteBar, 10);
-            recipe.AddIngredient(mod, "SkullLegsT5");
+            recipe.AddIngredient(mod, "OracleLegsT5");
             recipe.AddTile(TileID.MythrilAnvil);
             recipe.SetResult(this);
             recipe.AddRecipe();

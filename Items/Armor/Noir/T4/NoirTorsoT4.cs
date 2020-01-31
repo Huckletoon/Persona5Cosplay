@@ -3,16 +3,16 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Persona5Cosplay.Items.Armor.Skull.T4
+namespace Persona5Cosplay.Items.Armor.Noir.T4
 {
     [AutoloadEquip(EquipType.Body)]
-    class SkullTorsoT4 : ModItem
+    class NoirTorsoT4 : ModItem
     {
-        public override string Texture => "Persona5Cosplay/Items/Armor/Skull/SkullTorso";
+        public override string Texture => "Persona5Cosplay/Items/Armor/Noir/NoirTorso";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Skull Armor T4");
-            Tooltip.SetDefault("The garb of Skull's rebellion");
+            DisplayName.SetDefault("Noir Armor T4");
+            Tooltip.SetDefault("The garb of Noir's rebellion");
         }
 
         public override void SetDefaults()
@@ -26,7 +26,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T4
 
         public override bool IsArmorSet(Item head, Item body, Item legs)
         {
-            return head.type == ItemType<SkullHeadT4>() && legs.type == ItemType<SkullLegsT4>();
+            return head.type == ItemType<NoirHeadT4>() && legs.type == ItemType<NoirLegsT4>();
         }
 
         public override void UpdateArmorSet(Player player)
@@ -42,7 +42,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T4
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddRecipeGroup("Persona5Cosplay:CobaltBars", 30);
-            recipe.AddIngredient(mod, "SkullTorsoT3");
+            recipe.AddIngredient(mod, "NoirTorsoT3");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe(); 

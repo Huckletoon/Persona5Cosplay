@@ -3,16 +3,16 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Persona5Cosplay.Items.Armor.Skull.T1
+namespace Persona5Cosplay.Items.Armor.Noir.T1
 {
     [AutoloadEquip(EquipType.Body)]
-    class SkullTorsoT1 : ModItem
+    class NoirTorsoT1 : ModItem
     {
-        public override string Texture => "Persona5Cosplay/Items/Armor/Skull/SkullTorso";
+        public override string Texture => "Persona5Cosplay/Items/Armor/Noir/NoirTorso";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Skull Armor T1");
-            Tooltip.SetDefault("The garb of Skull's rebellion");
+            DisplayName.SetDefault("Noir Armor T1");
+            Tooltip.SetDefault("The garb of Noir's rebellion");
         }
 
         public override void SetDefaults()
@@ -26,7 +26,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T1
 
         public override bool IsArmorSet(Item head, Item body, Item legs)
         {
-            return head.type == ItemType<PantherHeadT1>() && legs.type == ItemType<SkullLegsT1>();
+            return head.type == ItemType<NoirHeadT1>() && legs.type == ItemType<NoirLegsT1>();
         }
 
         public override void UpdateArmorSet(Player player)

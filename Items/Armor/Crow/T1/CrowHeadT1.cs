@@ -3,16 +3,16 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Persona5Cosplay.Items.Armor.Skull.T1
+namespace Persona5Cosplay.Items.Armor.Crow.T1
 {
     [AutoloadEquip(EquipType.Head)]
-    class PantherHeadT1 : ModItem
+    class CrowHeadT1 : ModItem
     {
-        public override string Texture => "Persona5Cosplay/Items/Armor/Skull/SkullHead";
+        public override string Texture => "Persona5Cosplay/Items/Armor/Crow/CrowHead";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Skull Mask T1");
-            Tooltip.SetDefault("The mask worn by Skull");
+            DisplayName.SetDefault("Crow Mask T1");
+            Tooltip.SetDefault("The mask worn by Crow");
         }
 
         public override void SetDefaults()

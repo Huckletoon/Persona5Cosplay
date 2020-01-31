@@ -1,19 +1,19 @@
-﻿using Persona5Cosplay.Items.Armor.Skull.T1;
+﻿using Persona5Cosplay.Items.Armor.Mona.T1;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace Persona5Cosplay.Items.Armor.Skull.T7
+namespace Persona5Cosplay.Items.Armor.Mona.T7
 {
     [AutoloadEquip(EquipType.Legs)]
-    class SkullLegsT7 : ModItem
+    class MonaLegsT7 : ModItem
     {
-        public override string Texture => "Persona5Cosplay/Items/Armor/Skull/SkullLegs";
+        public override string Texture => "Persona5Cosplay/Items/Armor/Mona/MonaLegs";
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Ultimate Skull Pants");
-            Tooltip.SetDefault("The true garb of Skull");
+            DisplayName.SetDefault("Ultimate Mona Pants");
+            Tooltip.SetDefault("The true garb of Mona");
         }
 
         public override void SetDefaults()
@@ -33,7 +33,7 @@ namespace Persona5Cosplay.Items.Armor.Skull.T7
             recipe.AddIngredient(ItemID.FragmentSolar, 20);
             recipe.AddIngredient(ItemID.FragmentStardust, 20);
             recipe.AddIngredient(ItemID.FragmentVortex, 20);
-            recipe.AddIngredient(mod, "SkullLegsT6");
+            recipe.AddIngredient(mod, "MonaLegsT6");
             recipe.AddTile(TileID.LunarCraftingStation);
             recipe.SetResult(this);
             recipe.AddRecipe();
