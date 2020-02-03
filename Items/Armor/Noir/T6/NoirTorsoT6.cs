@@ -22,7 +22,7 @@ namespace Persona5Cosplay.Items.Armor.Noir.T6
             item.height = 18;
             item.value = 60000;
             item.rare = 7;
-            item.defense = 19;
+            item.defense = 15;
         }
 
         public override bool IsArmorSet(Item head, Item body, Item legs)
@@ -32,10 +32,9 @@ namespace Persona5Cosplay.Items.Armor.Noir.T6
 
         public override void UpdateArmorSet(Player player)
         {
-            player.setBonus = "+45% Melee Damage\nSet bonus: +35% Attack Speed\nSet bonus: Knockback Immunity";
-            player.meleeDamage += 0.45f;
-            player.GetModPlayer<P5Player>().attackSpeedMod = 0.35f;
-            player.noKnockback = true;
+            player.setBonus = "+45% Ranged Damage\nSet bonus: +35% Ranged Crit";
+            player.rangedDamage += 0.45f;
+            player.rangedCrit = 35;
             player.GetModPlayer<P5Player>().equipmentTier = 6;
         }
 

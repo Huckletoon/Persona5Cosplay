@@ -24,7 +24,7 @@ namespace Persona5Cosplay.Items.Armor.Crow.T5
             item.height = 18;
             item.value = 50000;
             item.rare = 5;
-            item.defense = 17;
+            item.defense = 14;
         }
 
         public override bool IsArmorSet(Item head, Item body, Item legs)
@@ -34,10 +34,9 @@ namespace Persona5Cosplay.Items.Armor.Crow.T5
 
         public override void UpdateArmorSet(Player player)
         {
-            player.setBonus = "+35% Melee Damage\nSet bonus: +25% Attack Speed\nSet bonus: Knockback Immunity";
-            player.meleeDamage += 0.35f;
+            player.setBonus = "+30% Melee Damage\nSet bonus: +25% Attack Speed";
+            player.allDamage += 0.30f;
             player.GetModPlayer<P5Player>().attackSpeedMod = 0.25f;
-            player.noKnockback = true;
             player.GetModPlayer<P5Player>().equipmentTier = 5;
         }
 

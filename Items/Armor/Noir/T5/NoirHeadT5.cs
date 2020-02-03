@@ -21,7 +21,7 @@ namespace Persona5Cosplay.Items.Armor.Noir.T5
             item.height = 18;
             item.value = 30000;
             item.rare = 5;
-            item.defense = 14;
+            item.defense = 12;
         }
 
         public override void AddRecipes()

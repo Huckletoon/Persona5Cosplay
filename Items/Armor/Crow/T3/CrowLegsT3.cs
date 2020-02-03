@@ -21,7 +21,7 @@ namespace Persona5Cosplay.Items.Armor.Crow.T3
             item.height = 18;
             item.value = 8000;
             item.rare = 2;
-            item.defense = 11;
+            item.defense = 9;
         }
 
         public override void AddRecipes()
