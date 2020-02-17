@@ -22,7 +22,7 @@ namespace Persona5Cosplay.Items.Armor.Mona.T6
             item.height = 18;
             item.value = 36000;
             item.rare = 7;
-            item.defense = 18;
+            item.defense = 15;
         }
 
         public override void AddRecipes()

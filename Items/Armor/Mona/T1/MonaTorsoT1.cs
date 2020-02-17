@@ -21,7 +21,7 @@ namespace Persona5Cosplay.Items.Armor.Mona.T1
             item.height = 18;
             item.value = 1500;
             item.rare = 0;
-            item.defense = 6;
+            item.defense = 4;
         }
 
         public override bool IsArmorSet(Item head, Item body, Item legs)
@@ -31,8 +31,8 @@ namespace Persona5Cosplay.Items.Armor.Mona.T1
 
         public override void UpdateArmorSet(Player player)
         {
-            player.setBonus = "+10% Melee Damage";
-            player.meleeDamage += 0.10f;
+            player.setBonus = "+5% Magic Damage";
+            player.magicDamage += 0.05f;
             player.GetModPlayer<P5Player>().equipmentTier = 1;
         }
 

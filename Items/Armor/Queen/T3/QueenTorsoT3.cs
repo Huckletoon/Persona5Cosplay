@@ -21,7 +21,7 @@ namespace Persona5Cosplay.Items.Armor.Queen.T3
             item.height = 18;
             item.value = 10000;
             item.rare = 2;
-            item.defense = 12;
+            item.defense = 9;
         }
 
         public override bool IsArmorSet(Item head, Item body, Item legs)
@@ -31,10 +31,8 @@ namespace Persona5Cosplay.Items.Armor.Queen.T3
 
         public override void UpdateArmorSet(Player player)
         {
+            //TODO
             player.setBonus = "+20% Melee Damage\nSet bonus: +10% Attack Speed\nSet bonus: Knockback Immunity";
-            player.meleeDamage += 0.20f;
-            player.noKnockback = true;
-            player.GetModPlayer<P5Player>().attackSpeedMod = 0.10f;
             player.GetModPlayer<P5Player>().equipmentTier = 3;
         }
 

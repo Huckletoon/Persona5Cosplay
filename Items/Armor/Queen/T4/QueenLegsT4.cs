@@ -21,7 +21,7 @@ namespace Persona5Cosplay.Items.Armor.Queen.T4
             item.height = 18;
             item.value = 12000;
             item.rare = 4;
-            item.defense = 12;
+            item.defense = 8;
         }
 
         public override void AddRecipes()

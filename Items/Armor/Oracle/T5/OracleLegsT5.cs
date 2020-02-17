@@ -22,7 +22,7 @@ namespace Persona5Cosplay.Items.Armor.Oracle.T5
             item.height = 18;
             item.value = 40000;
             item.rare = 5;
-            item.defense = 15;
+            item.defense = 11;
         }
 
         public override void AddRecipes()
