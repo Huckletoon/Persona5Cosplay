@@ -32,7 +32,12 @@ namespace Persona5Cosplay.Items.Armor.Queen.T4
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
             recipe.AddRecipe();
-             
+
+        }
+
+        public override void DrawHair(ref bool drawHair, ref bool drawAltHair)
+        {
+            drawHair = true;
         }
     }
 }

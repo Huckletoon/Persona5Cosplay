@@ -33,5 +33,10 @@ namespace Persona5Cosplay.Items.Armor.Oracle.T1
             recipe.AddRecipe();
 
         }
+
+        public override void DrawHair(ref bool drawHair, ref bool drawAltHair)
+        {
+            drawHair = true;
+        }
     }
 }

@@ -31,8 +31,13 @@ namespace Persona5Cosplay.Items.Armor.Trickster.T4
             recipe.AddIngredient(mod, "TricksterHeadT3");
             recipe.AddTile(TileID.Anvils);
             recipe.SetResult(this);
-            recipe.AddRecipe(); 
+            recipe.AddRecipe();
 
+        }
+
+        public override void DrawHair(ref bool drawHair, ref bool drawAltHair)
+        {
+            drawHair = true;
         }
     }
 }
