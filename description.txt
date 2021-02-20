@@ -1,1 +1,7 @@
-Persona 5 Cosplay is a pretty cool mod, it does...this. Modify this file with a description of your mod.
+This mod aims to add items based on Persona 5. 
+
+Currently contains:
+- 63 armor sets (wip)
+	- 9 basic armor sets based on the 9 playable party members in the original Persona 5 game, with 7 tiers for each to allow for their use through an entire playthrough
+- 1 melee weapon (wip)
+- 1 accessory (wip)
