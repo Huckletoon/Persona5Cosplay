@@ -1,6 +1,7 @@
 ﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Persona5Cosplay.Buffs;
 using static Terraria.ModLoader.ModContent;
 
 namespace Persona5Cosplay.Items.Armor.Mona.T3
@@ -32,8 +33,9 @@ namespace Persona5Cosplay.Items.Armor.Mona.T3
         public override void UpdateArmorSet(Player player)
         {
             //TODO
-            player.setBonus = "+15% Magic Damage\nSet bonus: +10% Attack Speed\nSet bonus: Knockback Immunity";
-            player.meleeDamage += 0.15f;
+            player.setBonus = "+15% Magic Damage\nSet bonus: Knockback Immunity\nSet bonus: Heal 5% of max health after taking damage";
+            player.magicDamage += 0.15f;
+            player.noKnockback = true;
             player.GetModPlayer<P5Player>().equipmentTier = 3;
         }
 

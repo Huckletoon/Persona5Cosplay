@@ -22,7 +22,7 @@ namespace Persona5Cosplay.Items.Armor.Mona.T7
             item.height = 18;
             item.value = 90000;
             item.rare = 10;
-            item.defense = 29;
+            item.defense = 28;
         }
 
         public override bool IsArmorSet(Item head, Item body, Item legs)
@@ -33,8 +33,9 @@ namespace Persona5Cosplay.Items.Armor.Mona.T7
         public override void UpdateArmorSet(Player player)
         {
             //TODO
-            player.setBonus = "+60% Melee Damage\nSet Bonus: +50% Attack Speed\nSet bonus: Knockback Immunity";
-            player.meleeDamage += 0.60f;
+            player.setBonus = "+45% Magic Damage\nSet bonus: Knockback Immunity\nSet bonus: Heal 30% of max health after taking damage";
+            player.magicDamage += 0.45f;
+            player.noKnockback = true;
             player.GetModPlayer<P5Player>().equipmentTier = 7;
         }
 

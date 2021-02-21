@@ -10,7 +10,6 @@ namespace Persona5Cosplay.Items
     {
 		public override void SetStaticDefaults()
 		{
-			// DisplayName.SetDefault("RebelKnife"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
 			Tooltip.SetDefault("The spark of rebellion in one's soul\nIncreases critical chance, defense, health, and mana\nEffect increases based on equipped Phantom Thief armor");
 		}
 
@@ -40,7 +39,7 @@ namespace Persona5Cosplay.Items
 
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
-			int tier = 0;
+			int tier = -1;
 			try
 			{
 				Item head = player.armor[0];

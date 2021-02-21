@@ -34,9 +34,9 @@ namespace Persona5Cosplay.Items.Armor.Mona.T5
 
         public override void UpdateArmorSet(Player player)
         {
-            //TODO
-            player.setBonus = "+35% Melee Damage\nSet bonus: +25% Attack Speed\nSet bonus: Knockback Immunity";
-            player.meleeDamage += 0.35f;
+            player.setBonus = "+30% Magic Damage\nSet bonus: Knockback Immunity\nSet bonus: Heal 15% of max health after taking damage";
+            player.magicDamage += 0.30f;
+            player.noKnockback = true;
             player.GetModPlayer<P5Player>().equipmentTier = 5;
         }
 
