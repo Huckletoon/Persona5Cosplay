@@ -1,5 +1,6 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
+using Persona5Cosplay;
 
 namespace Persona5Cosplay.Buffs
 {
@@ -16,7 +17,7 @@ namespace Persona5Cosplay.Buffs
 
         public override void Update(Player player, ref int buffIndex)
         {
-            player.statDefense += 10;
+            player.statDefense += 10 * player.GetModPlayer<P5Player>().equipmentTier;
 
         }
     }

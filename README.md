@@ -29,20 +29,4 @@ Rebellious Spirit (Needs: Art)
 ## In-Progress (Active)
 
 ## Completed Features
-Trickster Armor
-
-Skull Armor
-
-Panther Armor
-
-Fox Armor
-
-Crow Armor
-
-Noir Armor
-
-Mona Armor
-
-Queen Armor
-
-Oracle Armor
+All armor sets

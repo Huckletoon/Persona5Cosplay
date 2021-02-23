@@ -1,7 +1,21 @@
 This mod aims to add items based on Persona 5. 
 
+Each armor set has 7 tiers, with each subsequent tier requiring the previous to craft.
+
 Currently contains:
-- 63 armor sets (wip)
+- 63 armor sets
 	- 9 basic armor sets based on the 9 playable party members in the original Persona 5 game, with 7 tiers for each to allow for their use through an entire playthrough
 - 1 melee weapon (wip)
 - 1 accessory (wip)
+
+Armor Set Details
+
+Trickster: excels in being a jack of all trades, increasing all damage dealt and increasing attack speed.
+Skull: focuses on dealing stable melee damage at a short range, providing knockback immunity on all tiers except the first.
+Panther: specializes in magic damage, decreasing mana cost and increasing max mana as the tiers progress.
+Fox: specializes in melee damage; unlike Skull, this set gains Thorns on the last three tiers and does not provide knockback immunity.
+Queen: a jack of all trades set, though not to the same extent as the Trickster. Provides increased move speed and a unique buff that increases Defense after being hit
+Oracle: a jack of all trades set, though it is the weakest of all. Provides random buffs to Attack, Defense, or Speed periodically, becoming more frequent as the tiers increase.
+Noir: specializes in raw Ranged damage, simply increases damage and crit chance (up to a max of +60% damage and +50% crit chance)
+Crow: identical to the Trickster for now
+Mona: focuses on magic damage and self-sustainability. Grants knockback immunity after Tier 3 and heals a percent of max health after taking damage and remaining safe for a few seconds.
