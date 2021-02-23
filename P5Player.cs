@@ -44,21 +44,28 @@ namespace Persona5Cosplay
 
         public override void PostHurt(bool pvp, bool quiet, double damage, int hitDirection, bool crit)
         {
-            Item head = player.armor[0];
-            Item torso = player.armor[1];
-            Item legs = player.armor[2];
-
-            //Mona Buff
-            if (torso.modItem.IsArmorSet(head, torso, legs) && (torso.Name.StartsWith("Mona") || torso.Name.StartsWith("Ultimate Mona")) && equipmentTier >= 3){
-                player.AddBuff(ModContent.BuffType<MonaBuff>(), 60 * 4 - 10);
-            }
-
-            //Queen Buff
-            if (torso.modItem.IsArmorSet(head, torso, legs) && (torso.Name.StartsWith("Queen") || torso.Name.StartsWith("Ultimate Queen")) && equipmentTier >= 3)
+            try
             {
-                player.AddBuff(ModContent.BuffType<QueenBuff>(), 60 * 5);
-            }
+                Item head = player.armor[0];
+                Item torso = player.armor[1];
+                Item legs = player.armor[2];
 
+                if (!(head == null || torso == null || legs == null))
+                {
+
+                    //Mona Buff
+                    if (torso.modItem.IsArmorSet(head, torso, legs) && (torso.Name.StartsWith("Mona") || torso.Name.StartsWith("Ultimate Mona")) && equipmentTier >= 3)
+                    {
+                        player.AddBuff(ModContent.BuffType<MonaBuff>(), 60 * 4 - 10);
+                    }
+
+                    //Queen Buff
+                    if (torso.modItem.IsArmorSet(head, torso, legs) && (torso.Name.StartsWith("Queen") || torso.Name.StartsWith("Ultimate Queen")) && equipmentTier >= 3)
+                    {
+                        player.AddBuff(ModContent.BuffType<QueenBuff>(), 60 * 5);
+                    }
+                }
+            } catch (Exception e) { }
             base.PostHurt(pvp, quiet, damage, hitDirection, crit);
         }
 

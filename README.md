@@ -27,6 +27,7 @@ Rebel Knife (Needs: Art + Arkhalis-style projectile + Testing/Tweaking)
 Rebellious Spirit (Needs: Art)
 
 ## In-Progress (Active)
+Refactor player buffs on hit (update and check for player vars instead of checking equipment)
 
 ## Completed Features
 All armor sets
