@@ -26,12 +26,7 @@ Rebel Knife (Needs: Art + Arkhalis-style projectile + Testing/Tweaking)
 
 Rebellious Spirit (Needs: Art)
 
-Queen Armor T1-T7
-
-Oracle Armor T1-T7
-
 ## In-Progress (Active)
-
 
 ## Completed Features
 Trickster Armor
@@ -47,3 +42,7 @@ Crow Armor
 Noir Armor
 
 Mona Armor
+
+Queen Armor
+
+Oracle Armor

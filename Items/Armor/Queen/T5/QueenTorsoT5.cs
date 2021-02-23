@@ -34,9 +34,9 @@ namespace Persona5Cosplay.Items.Armor.Queen.T5
 
         public override void UpdateArmorSet(Player player)
         {
-            //TODO
-            player.setBonus = "+35% Melee Damage\nSet bonus: +25% Attack Speed\nSet bonus: Knockback Immunity";
-            player.meleeDamage += 0.35f;
+            player.setBonus = "+25% Damage\nSet bonus: +20% Move Speed\nSet bonus: Gain increased defense after being hit";
+            player.allDamage += 0.25f;
+            player.moveSpeed += 0.20f;
             player.GetModPlayer<P5Player>().equipmentTier = 5;
         }
 

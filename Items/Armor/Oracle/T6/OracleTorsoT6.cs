@@ -1,4 +1,6 @@
 ﻿using Persona5Cosplay.Items.Armor.Oracle.T1;
+using Persona5Cosplay.Buffs;
+using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -9,6 +11,10 @@ namespace Persona5Cosplay.Items.Armor.Oracle.T6
     [AutoloadEquip(EquipType.Body)]
     class OracleTorsoT6 : ModItem
     {
+        private const int MAX_TIME = 60 * 10;
+        private int timer = 0;
+        private Random rng = new Random();
+
         public override string Texture => "Persona5Cosplay/Items/Armor/Oracle/OracleTorso";
         public override void SetStaticDefaults()
         {
@@ -32,8 +38,24 @@ namespace Persona5Cosplay.Items.Armor.Oracle.T6
 
         public override void UpdateArmorSet(Player player)
         {
-            //TODO
-            player.setBonus = "+45% Melee Damage\nSet bonus: +35% Attack Speed\nSet bonus: Knockback Immunity";
+            player.setBonus = "Randomly buff Attack, Defense, or Speed every 10 seconds\nSet bonus: Highlight danger around you";
+            timer++;
+            if (timer >= MAX_TIME)
+            {
+                switch (rng.Next() % 3) {
+                    case 0:
+                        player.AddBuff(ModContent.BuffType<OracleBuff_Attack>(), 60 * 10);
+                        break;
+                    case 1:
+                        player.AddBuff(ModContent.BuffType<OracleBuff_Defense>(), 60 * 10);
+                        break;
+                    case 2:
+                        player.AddBuff(ModContent.BuffType<OracleBuff_Speed>(), 60 * 10);
+                        break;
+                }
+                timer = 0;
+            }
+            player.AddBuff(BuffID.Dangersense, 5);
             player.GetModPlayer<P5Player>().equipmentTier = 6;
         }
 

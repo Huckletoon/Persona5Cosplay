@@ -39,5 +39,6 @@ namespace Persona5Cosplay.Items.Armor.Mona.T7
             recipe.AddRecipe();
 
         }
+
     }
 }

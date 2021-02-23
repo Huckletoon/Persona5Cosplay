@@ -12,6 +12,7 @@ namespace Persona5Cosplay.Items.Armor.Mona.T7
         public override string Texture => "Persona5Cosplay/Items/Armor/Mona/MonaTorso";
         public override void SetStaticDefaults()
         {
+            base.SetStaticDefaults();
             DisplayName.SetDefault("Ultimate Mona Armor");
             Tooltip.SetDefault("The true garb of Mona");
         }
@@ -32,7 +33,6 @@ namespace Persona5Cosplay.Items.Armor.Mona.T7
 
         public override void UpdateArmorSet(Player player)
         {
-            //TODO
             player.setBonus = "+45% Magic Damage\nSet bonus: Knockback Immunity\nSet bonus: Heal 30% of max health after taking damage";
             player.magicDamage += 0.45f;
             player.noKnockback = true;

@@ -31,9 +31,8 @@ namespace Persona5Cosplay.Items.Armor.Queen.T1
 
         public override void UpdateArmorSet(Player player)
         {
-            //TODO
-            player.setBonus = "+10% Melee Damage";
-            player.meleeDamage += 0.10f;
+            player.setBonus = "+5% Damage";
+            player.allDamage += 0.05f;
             player.GetModPlayer<P5Player>().equipmentTier = 1;
         }
 

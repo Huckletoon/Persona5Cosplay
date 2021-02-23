@@ -1,4 +1,5 @@
-﻿using Persona5Cosplay.Items.Armor.Oracle.T1;
+﻿using System;
+using Persona5Cosplay.Buffs;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -9,6 +10,10 @@ namespace Persona5Cosplay.Items.Armor.Oracle.T7
     [AutoloadEquip(EquipType.Body)]
     class OracleTorsoT7 : ModItem
     {
+        private const int MAX_TIME = 60 * 5;
+        private int timer = 0;
+        private Random rng = new Random();
+
         public override string Texture => "Persona5Cosplay/Items/Armor/Oracle/OracleTorso";
         public override void SetStaticDefaults()
         {
@@ -32,8 +37,44 @@ namespace Persona5Cosplay.Items.Armor.Oracle.T7
 
         public override void UpdateArmorSet(Player player)
         {
-            //TODO
-            player.setBonus = "+60% Melee Damage\nSet Bonus: +50% Attack Speed\nSet bonus: Knockback Immunity";
+            player.setBonus = "Randomly buff Attack, Defense, or Speed every 5 seconds\nSet bonus: Highlight danger around you\nSet bonus: 30% chance to evade attacks";
+            timer++;
+            if (timer >= MAX_TIME)
+            {
+                bool hasBuff = false;
+                int buffType = -1;
+                do
+                {
+                    buffType = rng.Next() % 3;
+                    switch (buffType)
+                    {
+                        case 0:
+                            hasBuff = player.HasBuff(ModContent.BuffType<OracleBuff_Attack>());
+                            break;
+                        case 1:
+                            hasBuff = player.HasBuff(ModContent.BuffType<OracleBuff_Defense>());
+                            break;
+                        case 2:
+                            hasBuff = player.HasBuff(ModContent.BuffType<OracleBuff_Speed>());
+                            break;
+                    }
+                } while (hasBuff);
+                switch (buffType)
+                {
+                    case 0:
+                        player.AddBuff(ModContent.BuffType<OracleBuff_Attack>(), 60 * 10);
+                        break;
+                    case 1:
+                        player.AddBuff(ModContent.BuffType<OracleBuff_Defense>(), 60 * 10);
+                        break;
+                    case 2:
+                        player.AddBuff(ModContent.BuffType<OracleBuff_Speed>(), 60 * 10);
+                        break;
+                }
+                timer = 0;
+            }
+            player.AddBuff(BuffID.Dangersense, 5);
+            player.GetModPlayer<P5Player>().dodgeChance = 0.30f;
             player.GetModPlayer<P5Player>().equipmentTier = 7;
         }
 
