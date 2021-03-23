@@ -29,5 +29,11 @@ Rebellious Spirit (Needs: Art)
 ## In-Progress (Active)
 Refactor player buffs on hit (update and check for player vars instead of checking equipment)
 
+Magic Weapons
+
 ## Completed Features
 All armor sets
+
+## Credits
+Sprites: @ZenlexiArt
+Everything else: @Huckletoon
