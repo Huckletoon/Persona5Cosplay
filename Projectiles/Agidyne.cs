@@ -6,7 +6,7 @@ using Microsoft.Xna.Framework;
 
 namespace Persona5Cosplay.Projectiles
 {
-    public class Agi : ModProjectile
+    public class Agidyne : ModProjectile
     {
         private float maxSpeed = 8f;
         private float homingRange = 250f;
@@ -21,8 +21,8 @@ namespace Persona5Cosplay.Projectiles
             projectile.friendly = true;
 
             //TODO
-            projectile.width = 10;
-            projectile.height = 10;
+            projectile.width = 30;
+            projectile.height = 30;
         }
 
         public override void AI()

@@ -6,11 +6,11 @@ using Microsoft.Xna.Framework;
 
 namespace Persona5Cosplay.Projectiles
 {
-    public class Agi : ModProjectile
+    public class Maragidyne : ModProjectile
     {
         private float maxSpeed = 8f;
-        private float homingRange = 250f;
-        private float homingStrength = 1f;
+        private float homingRange = 175f;
+        private float homingStrength = 0.6f;
         private int debuffChance = 4;
         private Random rng = new Random();
 
@@ -20,13 +20,16 @@ namespace Persona5Cosplay.Projectiles
             projectile.magic = true;  
             projectile.friendly = true;
 
+            projectile.penetrate = 2;
+
             //TODO
-            projectile.width = 10;
-            projectile.height = 10;
+            projectile.width = 30;
+            projectile.height = 30;
         }
 
         public override void AI()
         {
+            //TODO
 
             //Rotate
             projectile.rotation += 0.5f * (float)projectile.direction;

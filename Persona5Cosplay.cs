@@ -34,6 +34,12 @@ namespace Persona5Cosplay
 			});
 			RecipeGroup.RegisterGroup("Persona5Cosplay:EvilBars", group);
 
+			group = new RecipeGroup(() => Language.GetTextValue("LegacyMisc.37") + " Evil Chunk", new int[]
+			{
+				ItemID.ShadowScale,
+				ItemID.TissueSample
+			});
+			RecipeGroup.RegisterGroup("Persona5Cosplay:EvilChunks", group);
 		}
 	}
 }
